@@ -1,0 +1,17 @@
+CREATE TABLE Emp(
+Emp_ID INT,
+Name VARCHAR(100),
+Age INT
+);
+
+INSERT INTO Emp
+VALUES (1,"Rohit", 25), (2, "Sadhana", 23), (3, "Kedar", 28);
+
+CREATE TABLE Dept(
+Dept_ID INT,
+Dept_Name VARCHAR(100),
+Emp_ID INT
+);
+
+INSERT INTO Dept
+VALUES(101, "HR", 3), (102, "Marketing", 1), (103, "Finance", 10);

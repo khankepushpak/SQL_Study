@@ -1,0 +1,15 @@
+DELIMITER //
+create trigger XYZ
+before insert
+ON employees FOR each row
+begin
+IF NEW.WORKING_HOURS<0 THEN
+   SET NEW.WORKING_HOURS=-(NEW.WORKING_HOURS);
+END IF;
+
+
+END //
+SHOW triggers;
+
+INSERT INTO EMPLOYEES
+VALUE("SURESH","FARMER","2020-01-01",-15);

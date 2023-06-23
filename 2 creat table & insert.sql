@@ -1,0 +1,20 @@
+CREATE TABLE Employee(
+ID INT,
+NAME VARCHAR(100),
+AGE INT,
+CITY VARCHAR(100)
+);
+
+
+SELECT * FROM Employee;
+
+
+insert into Employee
+VALUE(1,"RAHUL",25,"PUNE"),
+	 (2,"GEETA",25,"MUMBAI"),
+     (3,"NISHANT",24,"BENGLORE");
+     
+	
+INSERT INTO Employee(ID,NAME)
+VALUE(4,"PRASHANT");
+

@@ -1,0 +1,20 @@
+# Loop in Stored Procedure
+
+DELIMITER //
+CREATE PROCEDURE MyLoop()
+ BEGIN
+	DECLARE no INT;
+	SET no = 0;
+	abc: LOOP
+		SET no = no +1;
+		select no ;
+		IF no =5 THEN
+			LEAVE abc;
+		END IF;
+ END LOOP abc;
+SELECT no;
+
+END //
+DELIMITER ;
+
+CALL MyLoop();

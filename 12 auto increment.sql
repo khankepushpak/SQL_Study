@@ -1,0 +1,13 @@
+CREATE TABLE HOTEL(
+ROOM_NO int primary KEY auto_increment,
+FLOOR_NO int
+);
+
+INSERT INTO HOTEL(FLOOR_NO)
+values(1);
+
+INSERT INTO HOTEL(FLOOR_NO)
+values(5);
+
+INSERT INTO HOTEL(FLOOR_NO)
+values(20);
